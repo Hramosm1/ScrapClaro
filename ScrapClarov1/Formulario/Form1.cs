@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ScrapClarov1.Funciones;
+using SpreadsheetLight;
 
 namespace ScrapClarov1
 {
@@ -42,6 +43,32 @@ namespace ScrapClarov1
             }
             
             
+        }
+
+        private void btnExcel_Click(object sender, EventArgs e)
+        {
+            DataTable datos = (DataTable)dgvData.DataSource;
+
+            try
+            {
+                SaveFileDialog csv = new SaveFileDialog();
+                // saveFileDialog1.Filter = "Excel Files |*.xlsx";
+                csv.Filter = "Excel Files |*.xlsx";
+                csv.Title = "Seleccione en donde quiere guardar su archivo";
+                if (csv.ShowDialog() == DialogResult.OK)
+                {
+                    SLDocument sl = new SLDocument();
+                    sl.ImportDataTable(1, 1, datos, true);
+                    sl.SaveAs(csv.FileName);
+
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
     }
 }

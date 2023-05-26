@@ -77,6 +77,7 @@ namespace ScrapClarov1
             this.btnExcel.TabIndex = 4;
             this.btnExcel.Text = "Descargar Resultado";
             this.btnExcel.UseVisualStyleBackColor = true;
+            this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
             // 
             // V1
             // 

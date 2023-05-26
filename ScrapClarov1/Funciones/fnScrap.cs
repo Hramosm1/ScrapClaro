@@ -32,8 +32,8 @@ namespace ScrapClarov1.Funciones
             resultados.Columns.Add("Canton");
             resultados.Columns.Add("onBase");
 
-            if (inicializacionDriver())
-            {
+            //if (inicializacionDriver())
+            //{
                 foreach (DataRow investigar in Investigacion.Rows)
                 {
                     cont += 1;
@@ -83,7 +83,7 @@ namespace ScrapClarov1.Funciones
                     }
 
                 }
-            }
+            //}
 
             grid.DataSource = resultados;
             return flag;
