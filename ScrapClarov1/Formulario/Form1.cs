@@ -22,8 +22,8 @@ namespace ScrapClarov1
         private void btnCargar_Click(object sender, EventArgs e)
         {
             btnCargar.Enabled = false;
+            btnExcel.Enabled = true;
            
-
             if (fnImportarExcel.Importar("Hoja1", dgvData))
             {
                 btnCargar.Enabled = true;
@@ -34,15 +34,7 @@ namespace ScrapClarov1
         private void btnProcesar_Click(object sender, EventArgs e)
         {
             DataTable investigacion = (DataTable)dgvData.DataSource;
-            bool flag = fnScrap.InvestigacionTelefonos(investigacion, dgvData);
-
-            if (flag)
-            {
-                btnProcesar.Enabled = false;
-                btnExcel.Enabled = true;
-            }
-            
-            
+            bool flag = fnScrap.inicializacionDriver(investigacion, dgvData);
         }
 
         private void btnExcel_Click(object sender, EventArgs e)
