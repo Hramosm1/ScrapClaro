@@ -33,8 +33,15 @@ namespace ScrapClarov1
 
         private void btnProcesar_Click(object sender, EventArgs e)
         {
-            DataTable investigacion = (DataTable)dgvData.DataSource;
-            bool flag = fnScrap.inicializacionDriver(investigacion, dgvData);
+            try
+            {
+                DataTable investigacion = (DataTable)dgvData.DataSource;
+                bool flag = fnScrap.inicializacionDriver(investigacion, dgvData);
+            } catch (Exception ex)
+            {
+                MessageBox.Show("Error al iniciar: " + ex);
+            }
+            
         }
 
         private void btnExcel_Click(object sender, EventArgs e)

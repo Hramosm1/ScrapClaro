@@ -2,6 +2,8 @@ D:\Documentos\Repositorios\Ejemplos c#\ScrapClarov1\ScrapClarov1\bin\Debug\selen
 D:\Documentos\Repositorios\Ejemplos c#\ScrapClarov1\ScrapClarov1\bin\Debug\selenium-manager\macos\selenium-manager
 D:\Documentos\Repositorios\Ejemplos c#\ScrapClarov1\ScrapClarov1\bin\Debug\selenium-manager\windows\selenium-manager.exe
 D:\Documentos\Repositorios\Ejemplos c#\ScrapClarov1\ScrapClarov1\bin\Debug\ScrapClarov1.exe.config
+D:\Documentos\Repositorios\Ejemplos c#\ScrapClarov1\ScrapClarov1\bin\Debug\ScrapClarov1.exe.manifest
+D:\Documentos\Repositorios\Ejemplos c#\ScrapClarov1\ScrapClarov1\bin\Debug\ScrapClarov1.application
 D:\Documentos\Repositorios\Ejemplos c#\ScrapClarov1\ScrapClarov1\bin\Debug\ScrapClarov1.exe
 D:\Documentos\Repositorios\Ejemplos c#\ScrapClarov1\ScrapClarov1\bin\Debug\ScrapClarov1.pdb
 D:\Documentos\Repositorios\Ejemplos c#\ScrapClarov1\ScrapClarov1\bin\Debug\DocumentFormat.OpenXml.dll
@@ -13,11 +15,14 @@ D:\Documentos\Repositorios\Ejemplos c#\ScrapClarov1\ScrapClarov1\bin\Debug\WebDr
 D:\Documentos\Repositorios\Ejemplos c#\ScrapClarov1\ScrapClarov1\bin\Debug\DocumentFormat.OpenXml.xml
 D:\Documentos\Repositorios\Ejemplos c#\ScrapClarov1\ScrapClarov1\bin\Debug\SpreadsheetLight.xml
 D:\Documentos\Repositorios\Ejemplos c#\ScrapClarov1\ScrapClarov1\bin\Debug\System.IO.Packaging.xml
-D:\Documentos\Repositorios\Ejemplos c#\ScrapClarov1\ScrapClarov1\obj\Debug\ScrapClarov1.csproj.AssemblyReference.cache
 D:\Documentos\Repositorios\Ejemplos c#\ScrapClarov1\ScrapClarov1\obj\Debug\ScrapClarov1.V1.resources
 D:\Documentos\Repositorios\Ejemplos c#\ScrapClarov1\ScrapClarov1\obj\Debug\ScrapClarov1.Properties.Resources.resources
 D:\Documentos\Repositorios\Ejemplos c#\ScrapClarov1\ScrapClarov1\obj\Debug\ScrapClarov1.csproj.GenerateResource.cache
 D:\Documentos\Repositorios\Ejemplos c#\ScrapClarov1\ScrapClarov1\obj\Debug\ScrapClarov1.csproj.CoreCompileInputs.cache
+D:\Documentos\Repositorios\Ejemplos c#\ScrapClarov1\ScrapClarov1\obj\Debug\ScrapClarov1.exe.manifest
+D:\Documentos\Repositorios\Ejemplos c#\ScrapClarov1\ScrapClarov1\obj\Debug\ScrapClarov1.application
 D:\Documentos\Repositorios\Ejemplos c#\ScrapClarov1\ScrapClarov1\obj\Debug\ScrapClarov1.csproj.CopyComplete
 D:\Documentos\Repositorios\Ejemplos c#\ScrapClarov1\ScrapClarov1\obj\Debug\ScrapClarov1.exe
 D:\Documentos\Repositorios\Ejemplos c#\ScrapClarov1\ScrapClarov1\obj\Debug\ScrapClarov1.pdb
+D:\Documentos\Repositorios\Ejemplos c#\ScrapClarov1\ScrapClarov1\bin\Debug\chromedriver.exe
+D:\Documentos\Repositorios\Ejemplos c#\ScrapClarov1\ScrapClarov1\obj\Debug\ScrapClarov1.csproj.AssemblyReference.cache

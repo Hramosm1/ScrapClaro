@@ -50,10 +50,14 @@ namespace ScrapClarov1
             // 
             this.dgvData.AllowUserToAddRows = false;
             this.dgvData.AllowUserToDeleteRows = false;
+            this.dgvData.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvData.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvData.Location = new System.Drawing.Point(157, 25);
             this.dgvData.Name = "dgvData";
+            this.dgvData.RowHeadersVisible = false;
             this.dgvData.Size = new System.Drawing.Size(614, 404);
             this.dgvData.TabIndex = 2;
             // 
@@ -89,8 +93,10 @@ namespace ScrapClarov1
             this.Controls.Add(this.btnProcesar);
             this.Controls.Add(this.dgvData);
             this.Controls.Add(this.btnCargar);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Name = "V1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "v1";
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).EndInit();
             this.ResumeLayout(false);
 
