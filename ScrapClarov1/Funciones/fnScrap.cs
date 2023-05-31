@@ -44,8 +44,25 @@ namespace ScrapClarov1.Funciones
                     IWebElement texTelefono = driver.FindElement(By.XPath("/html/body/div[1]/div/div/div[3]/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div[2]/div/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/input"));
                     texTelefono.Clear();
                     texTelefono.SendKeys(telefono);
-                    Thread.Sleep(3000);
-
+                    Thread.Sleep(2000);
+                    if (driver.PageSource.Contains("Mensajes [227136583]"))
+                    {
+                        IWebElement error4 = driver.FindElement(By.XPath("//button[@id='ext-gen1061']"));
+                        error4.Click();
+                        texTelefono.SendKeys(OpenQA.Selenium.Keys.Enter);
+                    }
+                    if (driver.PageSource.Contains("[SysTimeoutExpired?]"))
+                    {
+                        
+                        try {
+                            IWebElement error3 = driver.FindElement(By.XPath("/html/body/div[18]/div[2]/div[2]/div/div/div/div[1]/table/tbody/tr/td[1]/table/tbody/tr/td[1]/table/tbody/tr[2]/td[2]/em/button"));
+                            error3.Click(); 
+                        }
+                        catch
+                        {
+                            
+                        }
+                    }
                     if (driver.PageSource.Contains("Mensajes [226203647]"))
                     {
                         IWebElement error3 = driver.FindElement(By.XPath("/html/body/div[18]/div[2]/div[1]/div/div/div[2]/div/table/tbody/tr/td[2]/table/tbody/tr/td[1]/table/tbody/tr/td/table/tbody/tr[2]/td[2]/em/button"));
@@ -54,7 +71,7 @@ namespace ScrapClarov1.Funciones
 
                     IWebElement buscar = driver.FindElement(By.XPath("/html/body/div[1]/div/div/div[3]/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div[2]/div/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/table/tbody/tr[2]/td[2]/em/button"));
                     buscar.Click();
-                    Thread.Sleep(10000);
+                    Thread.Sleep(6000);
 
                     if (driver.PageSource.Contains("Mensajes [226194535]"))
                     {
@@ -64,9 +81,12 @@ namespace ScrapClarov1.Funciones
 
                     if (driver.PageSource.Contains("Nuevo Cliente"))
                     {
-                        IWebElement primerCliente = driver.FindElement(By.XPath("/html/body/div[18]/div[2]/div[1]/div/div/div/div/div/div[1]/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/div[1]/div[2]/div/div[2]/table/tbody/tr/td[4]/div/table/tbody/tr/td"));
+                        IWebElement primerCliente = driver.FindElement(By.XPath("/html/body/div[18]/div[2]/div[1]/div/div/div/div/div/div[1]/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/div[1]/div[2]/div/div[1]/table/tbody/tr/td[1]"));
+                            //driver.FindElement(By.XPath("//div[@class='x-grid3-row x-grid3-row-first']"));
+                            //driver.FindElement(By.XPath("/html/body/div[18]/div[2]/div[1]/div/div/div/div/div/div[1]/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/div[1]/div[2]/div/div[2]/table/tbody/tr/td[4]/div/table/tbody/tr/td"));
                         primerCliente.Click();
-                        IWebElement error2 = driver.FindElement(By.XPath("/html/body/div[18]/div[2]/div[1]/div/div/div/div/div/div[2]/div/table/tbody/tr/td[2]/table/tbody/tr/td[1]/table/tbody/tr/td[1]/table/tbody/tr[2]/td[2]/em/button"));
+                        IWebElement error2 = driver.FindElement(By.XPath("//button[@class=' x-btn-text ImageOk']"));
+                            //driver.FindElement(By.XPath("/html/body/div[18]/div[2]/div[1]/div/div/div/div/div/div[2]/div/table/tbody/tr/td[2]/table/tbody/tr/td[1]/table/tbody/tr/td[1]/table/tbody/tr[2]/td[2]/em/button"));
                         error2.Click();
                         Thread.Sleep(5000);
                     }
@@ -108,23 +128,31 @@ namespace ScrapClarov1.Funciones
                         flag = true;
 
                     }
-                    catch (Exception ex)
+                    catch (Exception ex)    
                     {
-
+                        Thread.Sleep(10000);
+                        //break;
                     }
             }
 
-            IWebElement config = driver.FindElement(By.XPath("/html/body/div[1]/div/div/div[1]/div/div/div/div[4]/div/div/div/div[2]/table/tbody/tr/td[1]/table/tbody/tr/td/table/tbody/tr[2]/td[2]/em/button"));
-            config.Click();
+            try
+            {
+                IWebElement config = driver.FindElement(By.XPath("/html/body/div[1]/div/div/div[1]/div/div/div/div[4]/div/div/div/div[2]/table/tbody/tr/td[1]/table/tbody/tr/td/table/tbody/tr[2]/td[2]/em/button"));
+                config.Click();
 
-            IWebElement salir = driver.FindElement(By.XPath("/html/body/div[16]/ul/li[1]/a"));
-            salir.Click();
+                IWebElement salir = driver.FindElement(By.XPath("/html/body/div[16]/ul/li[1]/a"));
+                salir.Click();
 
-            IWebElement confirmar = driver.FindElement(By.XPath("/html/body/div[20]/div[2]/div[2]/div/div/div/div[1]/table/tbody/tr/td[1]/table/tbody/tr/td[2]/table/tbody/tr[2]/td[2]"));
-            confirmar.Click();
+                IWebElement confirmar = driver.FindElement(By.XPath("/html/body/div[20]/div[2]/div[2]/div/div/div/div[1]/table/tbody/tr/td[1]/table/tbody/tr/td[2]/table/tbody/tr[2]/td[2]"));
+                confirmar.Click();
 
-            driver.Close();
-            driver.Quit();
+                driver.Close();
+                driver.Quit();
+            }
+            catch
+            {
+                flag = false;
+            }
 
             grid.DataSource = resultados;
             return flag;
@@ -151,7 +179,7 @@ namespace ScrapClarov1.Funciones
                 driver.Navigate().GoToUrl(sitio);
 
                 //Esperar a que se abra la aplicacion
-                driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+                //driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
 
                 //Ingresar usuario y contraseña
                 IWebElement usuario = driver.FindElement(By.Id("txtAccount"));
