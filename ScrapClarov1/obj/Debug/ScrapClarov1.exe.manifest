@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ScrapClarov1.exe" size="31744">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ScrapClarov1.exe" size="32256">
       <assemblyIdentity name="ScrapClarov1" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Q1ZJrXlKp3KrYQ4d4lzQJKmFW1a1ZSKwyfm/EsbusA4=</dsig:DigestValue>
+        <dsig:DigestValue>+KaefPJgMn64v2cfyBFyF/qboQ3cYAeZxiGzJdfO2b4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

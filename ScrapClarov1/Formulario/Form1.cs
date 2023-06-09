@@ -66,7 +66,7 @@ namespace ScrapClarov1
             }
             catch (Exception ex)
             {
-
+               
             }
         }
     }
